@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Generate random numbers</title>
+</head>
+<body>
+  <div class="body-container">
+    <div class="main-container">
+      <form action="">
+        Cuántos números? (100 máx.)<input type="number" id="quantityId" min="1" max="100"><br>
+        Entre<input type="number" id="betweenFirst" min="0" max="100000">
+        y<input type="number" id="betweenSecond" min="0" max="100000">
+        <button id="generateBtn" onclick="generateList()" type="button">Generar Lista</button>
+      </form>
+      <p id="listResult"></p>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
