@@ -13,7 +13,6 @@ function generateList(){
       max = between2;
   }
 
-
   for (i = 0; i < q; i++) {
     arr.push(parseInt(Math.floor(Math.random() * max) + min));
   }
@@ -23,5 +22,9 @@ function generateList(){
     str += "<br>" + parseInt(arr[i]);
   }
 
-  document.getElementById("listResult").innerHTML = str
+  document.getElementById("listResult").innerHTML = str;
+  console.log(str);
+  console.log(arr);
+  console.log(min);
+  console.log(max);
 }
