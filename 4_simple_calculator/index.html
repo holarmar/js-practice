@@ -11,9 +11,9 @@
   <div class="mainContainer">
     <div class="mainContent">
       <form action="">
-        Primer Valor <br><input type="text"><br>
-        Segundo Valor <br><input type="text"><br>
-        <select name="" id="">
+        Primer Valor <br><input type="text" id="firstValue"><br>
+        Segundo Valor <br><input type="text" id="secondValue"><br>
+        <select name="" id="operatorChoice">
           <option value="add">Suma</option>
           <option value="min">Resta</option>
           <option value="div">División</option>
@@ -21,6 +21,8 @@
         </select>
         <button type="button" onclick="calculateResult()">Calcular</button>
       </form>
+
+      <p class="resultClass" id="resultId"></p>
     </div>
   </div>
 
