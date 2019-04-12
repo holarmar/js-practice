@@ -11,19 +11,34 @@
   <div class="container">
     <div class="content">
       <form action="" id="mainForm">
-        <select name="" id="">
-          <option value="sfv">Valor Futuro Simple</option>
-          <option value="cfv">Valor Futuro Compuesto</option>
-          <option value="spv"> </option>
-          <option value="cpv"></option>
-          <option value=""></option>
+        <select name="" id="selectType">
+          <option value="pv">Valor Presente</option>
+          <option value="fv">Valor Futuro</option>
         </select>
-        <input type="number" id="inputRate">
-        <input type="number" id="inputQ">
-        <input type="number" id="inputTime">
-        <input type="number" id="inputTime">
+        <label class="toggleSwitch">
+          <p>Cap?</p>
+          <input type="checkbox" id="isCompound">
+          <span class="toggleSlider"></span>
+        </label>
+        <label class="toggleSwitch">
+          <p>Cont?</p>
+          <input type="checkbox" id="isContiuous">
+          <span class="toggleSlider"></span>
+        </label>
+        <label> Cantidad
+          <input type="number" id="idQuantity">
+        </label>
+        <label> Periodos
+          <input type="number" id="idTime">
+        </label>
+        <label> Tasa de interés
+          <input type="number" id="idRate">
+        </label>
+        <label> Capitalización
+          <input type="number" id="idCompounding">
+        </label>
       </form>
-      <button onclick="getFV()">Calcular</button>
+      <button onclick="getValue()">Calcular</button>
     </div>
   </div>
 </body>
